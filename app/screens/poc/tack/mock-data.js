@@ -1,23 +1,23 @@
 module.exports = {
   userInfo: {
     andre: {
-      name: "Andre"
+      name: "André"
     },
     joao: {
-      name: "Joao"
+      name: "João"
     }
   },
 
   chatHistory: [
     {
       userId: "andre",
-      message: "Hi Joao",
+      message: "Hi João",
       timestamp: 1548138375314
     },
     {
       userId: "joao",
-      message: "Hi Andre",
-      timestamp: 1548138375999
+      message: "Hi André",
+      timestamp: 1548138395999
     }
   ]
 };

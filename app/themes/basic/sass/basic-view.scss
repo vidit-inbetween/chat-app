@@ -53,7 +53,18 @@ div#container {
   width: 50%;
   float: left;
   height: 100%;
-  padding: 200px 0;
+  padding: 250px 0;
+  position: relative;
+
+  .userWindowUserName{
+    font-size: 80px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: #aaa;
+    text-align: center;
+    width: calc(100% - 60px);
+  }
 }
 
 .chatWindowViewContainer {
