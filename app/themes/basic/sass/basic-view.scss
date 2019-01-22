@@ -1,0 +1,145 @@
+@mixin header {
+  line-height: 30px;
+  background: #eee;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+body * {
+  //line-height: 1.22em;
+  //font-weight: normal;
+}
+
+body b, body strong {
+  font-weight: bold;
+}
+
+body input {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+button:focus {outline:0;}
+textarea:focus {outline:0;}
+input:focus {outline:0;}
+
+div#container {
+  height: 100%;
+  background: #eee;
+}
+
+.viewsContainer {
+  background: #fff;
+  height: 0;
+  min-height: 100%;
+  float: left;
+  width: 100%;
+}
+
+.userWindowViewContainer {
+  width: 50%;
+  float: left;
+  height: 100%;
+  padding: 200px 0;
+}
+
+.chatWindowViewContainer {
+  box-shadow: 0px 10px 30px 0px rgba(0,0,0,.2);
+  height: 550px;
+  /* border: 1px solid #dedede; */
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+  transition: box-shadow .2s;
+
+  .chatWindowHeader {
+    height: 40px;
+    background: #484848;
+    line-height: 40px;
+    padding: 0 15px;
+
+    .headerUserName {
+      font-size: 16px;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+
+  .chatWindowMessageContainer {
+    height: 430px;
+    overflow: auto;
+
+    .chatSlice {
+      margin: 10px;
+      border-radius: 20px;
+      background: #f9f9f9;
+      width: 220px;
+      padding: 10px 15px;
+
+      .chatSliceUserName {
+        font-style: italic;
+        color: #777;
+      }
+
+      .chatSliceUserMessage {
+        font-size: 20px;
+        margin-bottom: 10px;
+        word-break: break-word;
+      }
+
+      .chatSliceTimestamp {
+        font-size: 10px;
+        color: #999;
+      }
+
+      &.chatSliceAlignRight {
+        float: right;
+      }
+
+      &.chatSliceAlignLeft {
+        float: left;
+        background: #dee6ff;
+      }
+    }
+  }
+
+  .messageTextBoxViewContainer {
+    height: 80px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+
+    .messageTextInput {
+      height: 60px;
+      width: 300px;
+      border-radius: 10px;
+      border: 1px solid #eee;
+      float: left;
+    }
+
+    .messageTextButton {
+      margin: 10px;
+      height: 40px;
+      width: 60px;
+      border-radius: 10px;
+    }
+  }
+
+  &.windowSelected{
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,.5);
+  }
+}

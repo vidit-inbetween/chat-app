@@ -1,0 +1,9 @@
+/node_modules
+.idea
+/__tests__
+*.settings
+*.zip
+*.patch
+start.js
+*.map
+start.css
